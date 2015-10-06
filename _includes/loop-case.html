@@ -1,0 +1,7 @@
+{% if page.title == "Case" %}
+{% assign item = post %}
+{% include structure-item.html %}
+{% else %}
+{% assign item = case %}
+{% include structure-item.html %}
+{% endif %}

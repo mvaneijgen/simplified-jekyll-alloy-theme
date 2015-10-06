@@ -1,0 +1,398 @@
+/* parallax
+———————————————————————————————————— */
+@media only screen and (min-width : 481px) {
+  /* Styles */
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    margin:0;
+    padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: sans-serif;
+  }
+  .parallax {
+    position: relative;
+  }
+  .parallax:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+  }
+  .parallax-item {
+    position: absolute;
+  }
+}
+/* END parallax
+———————————————————————————————————— */
+/* Type
+———————————————————————————————————— */
+.landing-header h3,
+.landing-header h1 {
+  color: #fff !important;
+  max-width: 730px;
+}
+h1 {
+  letter-spacing: 0.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: inherit;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.text h2 {
+  padding: 0 20% 100px;
+}
+/* END Type
+———————————————————————————————————— */
+/* Main overwrites
+———————————————————————————————————— */
+.main {
+  padding-left: 0 !important;
+}
+section {
+  background-color: #fff;
+}
+.min-vh {
+  margin-top: -40vh;
+}
+button {
+  padding: 15px 30px;
+  font-size: 1em;
+}
+section:last-of-type {
+  margin-bottom: 0 !important;
+}
+footer {
+  position: inherit !important;
+}
+/* END Main overwrites
+———————————————————————————————————— */
+nav {
+  padding: 20px;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  background-color: #fff;
+}
+nav img {
+  width: 55px
+}
+.landing-header {
+  overflow: hidden;
+}
+.landing-img img {
+  width: 50vw;
+  z-index: 9;
+}
+.icons {
+  align-items: flex-start;
+}
+.icon-box {
+  width: 30%;
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-box img {
+  padding-bottom: 30px;
+  width: 75%;
+}
+.icon-box.alt {
+  background: #e64;
+  padding: 20px;
+  color: #fff;
+}
+.decoration img {
+  width: 100%;
+}
+.qoute-box {
+  flex-direction: column;
+}
+.qoute-text {
+  max-width: 500px;
+}
+.qoute:nth-last-child(2) img {
+  order: 2;
+}
+.qoute img {
+  max-width: 250px;
+}
+/* Checklist */
+.checklist ul {
+  margin-bottom: 30px;
+}
+.checklist ul li {
+  background-color: #eee;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+.checklist ul li:first-child {
+  text-transform: uppercase;
+  background: #8dd;
+  color: #fff;
+  border-bottom: 0;
+}
+/* Slider
+———————————————————————————————————— */
+.slider {
+  position: relative;
+}
+.device {
+  position: absolute;
+  pointer-events: none;
+}
+.slider,
+.device {
+  max-width: 590px;
+}
+#owl-example{
+  padding: 26px 58px;
+}
+div#owl-example:after {
+  content: "";
+  background: 0;
+  pointer-events: none;
+}
+/* END Slider
+———————————————————————————————————— */
+/* Footer
+———————————————————————————————————— */
+footer form {
+  background-color: transparent;
+  padding: 0;
+}
+form h3 {
+  display: none;
+}
+
+/* END Footer
+———————————————————————————————————— */
+/* Media qeuries */
+@media only screen and (min-width : 769px) {
+  .text {
+    padding: 200px;
+  }
+  /* parallax */
+  section .parallax-item {
+    height: auto;
+    width: 320px;
+  }
+  section .parallax-item:nth-of-type(1) {
+    top: 50%;
+    transform: translateZ(.2px) scale(.8) translateX(0%) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(2) {
+    top: 50%;
+    transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(3){
+    top: 65%;
+    transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%) scaleX(-1);
+  }
+  section .parallax-item:nth-of-type(4) {
+    top: 75%;
+    transform: translateZ(.2px) scale(.7) translateX(0%) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(5) {
+    top: 20%;
+    transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(6){
+    top: 30%;
+    transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%);
+  }
+}
+@media only screen and (min-width : 1721px) {
+  /* Styles */
+  section .parallax-item:nth-of-type(1) {
+    left: 5%;
+  }
+  section .parallax-item:nth-of-type(2) {
+    right: 30%;
+  }
+  section .parallax-item:nth-of-type(3){
+    left: 30%;
+  }
+  section .parallax-item:nth-of-type(4) {
+    right: 5%;
+  }
+  section .parallax-item:nth-of-type(5) {
+    right: 25%;
+  }
+  section .parallax-item:nth-of-type(6){
+    left: 30%;
+  }
+}
+@media only screen and (max-width : 1720px) {
+  /* Styles */
+  section .parallax-item:nth-of-type(1) {
+    left: 0%;
+  }
+  section .parallax-item:nth-of-type(2) {
+    right: 20%;
+  }
+  section .parallax-item:nth-of-type(3){
+    left: 25%;
+  }
+  section .parallax-item:nth-of-type(4) {
+    right: 3%;
+  }
+  section .parallax-item:nth-of-type(5) {
+    right: 15%;
+  }
+  section .parallax-item:nth-of-type(6){
+    left: 25%;
+  }
+}
+@media only screen and (max-width : 1280px) {
+  /* Styles */
+  section .parallax-item:nth-of-type(1) {
+    left: 0%;
+    transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(2) {
+    right: 20%;
+    transform: translateZ(.5px) scale(.2) translateX(0) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(3){
+    left: 22%;
+    transform: translateZ(.7px) scale(.12) translateX(100%) translateY(0%) scaleX(-1);
+  }
+  section .parallax-item:nth-of-type(4) {
+    right: 3%;
+    transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(5) {
+    right: 15%;
+    transform: translateZ(.5px) scale(.16) translateX(0) translateY(0%);
+  }
+  section .parallax-item:nth-of-type(6){
+    left: 25%;
+    transform: translateZ(.7px) scale(.13) translateX(100%) translateY(0%);
+  }
+}
+@media only screen and (max-width : 1000px) {
+  .parallax-item {
+    display: none;
+  }
+  .icon-box {
+    width: 50%;
+  }
+  #dd_game{
+    width: 400px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width : 1024px) {
+  /* Styles */
+  #dd_game{
+    width: 700px;
+    height: 525px;
+  }
+  nav {
+    position: relative;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .icon-box {
+    width: 100%;
+  }
+  .mve-hide {
+    display: none;
+  }
+}
+
+/*Drag game*/
+.dragboard{
+  position: relative;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  width: 1024px;
+  height: 768px;
+  
+  background: url('../img/landing/digitale-lespakketten-ondergrond.svg') no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  
+  overflow: hidden;
+}
+
+.dragboard .dragger{
+  z-index: 100;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+.dragboard .dragger, .dragboard .dropper{
+  position: absolute;
+}
+/*
+testing mode
+*/
+.ui-draggable-dragging{
+  z-index: 1000 !important;
+}
+.dragboard.testing .dragger{
+  outline: 2px dotted #f8f;
+}
+.dragboard.testing .dragger::before{
+  content: 'dragger';
+}
+.dragboard.testing{
+  outline: 1px dotted #f00;
+}
+
+.dragboard.testing .dropper{
+  outline: 2px dotted #333;
+}
+.dragboard.testing .dropper::before{
+  content: 'dropper';
+}
+
+/*overlay*/
+.dd_overlay{
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: url('../img/landing/digitale-lespakketten-popup.svg') no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-transition: top .3s ease-in-out;
+  -moz-transition: top .3s ease-in-out;
+  -o-transition: top .3s ease-in-out;
+  transition: top .3s ease-in-out;
+}
+
+.dd_overlay.show{
+  top: 10px;
+}

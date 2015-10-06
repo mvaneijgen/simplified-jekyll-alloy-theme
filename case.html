@@ -1,0 +1,17 @@
+---
+layout: default
+title: Case
+description:
+categories: post-page
+permalink: case/
+---
+
+<section class="work-page no-vh">
+	<div class="content">
+		{% assign published = (site.case | where:"status","published") %}
+		{% for post in published %}
+		{% include loop-case.html %}
+		{% endfor %}
+		
+	</div>
+</section>

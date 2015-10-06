@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head prefix="og: http://ogp.me/ns#">
+  
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+  <!-- Site Properities -->
+  <!-- 
+  
+   -->
+  
+  <title>SVG animation on the web &middot; Alloy</title>
+  <link rel="canonical" href="/blog/SVG-for-web/">
+  <base href="/">
+  <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
+  <!--  -->
+  
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:url" content="http:/blog/SVG-for-web/">
+  <meta property="og:title" content="SVG animation on the web | Alloy">
+  <meta property="og:site_name" content="Alloy">
+  <meta property="og:description" content="Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Wij doen ons werk met veel enthousiasme en toewijding. Dat straalt af op onze opdrachtgevers.">
+  <meta property="og:image" content="/img/blog/svg.jpg">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="300">
+  
+  <meta name="twitter:card" content="/img/blog/svg.jpg">
+  <meta name="twitter:site" content="@studioalloy">
+  <meta name="twitter:creator" content="@studioalloy">
+  
+  
+  <meta property="og:type" content="website" />
+  
+  
+  <meta name="description" content="Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Wij doen ons werk met veel enthousiasme en toewijding. Dat straalt af op onze opdrachtgevers.">
+  <meta name="keywords" content="">
+  <meta name="google-site-verification" content="AeGqRUbqomU-hrRXchj3lk_yfBvQonAyf7CzUrOn5NU" />
+  
+  <!-- Fav icons -->
+  <link rel="shortcut icon" href="/img/favicon/alloy-16.ico" type="image/x-icon" sizes="16x16">
+  <link rel="shortcut icon" href="/img/favicon/alloy-16.png" type="image/x-icon" sizes="16x16">
+  <link rel="shortcut icon" href="/img/favicon/alloy-32.ico" type="image/x-icon" sizes="32x32">
+  <link rel="shortcut icon" href="/img/favicon/alloy-32.png" type="image/x-icon" sizes="32x32">
+  <link rel="apple-touch-icon-precomposed" href="/img/favicon/alloy-152.png">
+  <link rel="icon" sizes="152x152" href="/img/favicon/alloy-152-android.png">
+  
+  <!-- Common Styles -->
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+</head>
+<body class="default svg animation on the web experiment">
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="main">
+    <div id="header">
+	<div class="container">
+		<a href="/"><img class="logo" src="/img/alloy-logo.svg"></a>
+		<input type="checkbox" id="toggle" />
+		<div class="mobile-menu">
+			<label for="toggle" class="toggle" data-open="Menu" data-close="Close" onclick></label>
+			<ul class="menu">
+				<li class="menu-item"><a href="/case">Case</a></li>
+				<li class="menu-item"><a href="/team">Team</a></li>
+				<!--<li class="menu-item"><a href="/blog">Blog</a></li>-->
+				<li class="menu-item"><a href="/about">About</a></li>
+				<li class="menu-item"><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <div class="wrapper">
+      <section>
+  <article>
+    <section class="blog-header cover" style="background: url(/img/blog/svg.jpg);"></section>
+    <section class="flex">
+      <div class="text-container min-vh">
+        <h1>SVG animation on the web</h1>
+        <p>Twee jaar geleden dachten wij een goed idee te hebben, een HTML app maken voor alle mobiele platformen en omdat we houden van schaalbare (responsive) oplossingen, zou SVG de perfecte oplossingen zijn geweest. Alleen werd SVG niet ondersteund op android 2.X wat op dat moment de grootste versie was. Nu zijn wij een aantal jaar later en ben ik zelf nog artikelen tegen gekomen over SVG, maar heb deze altijd afgehouden omdat ik wist dat er zo weinig support voor was. Nu was ik aan het luisteren naar een podcast (<a href="http://5by5.tv/webahead/67">The Web Ahead aflevering 67)</a> deze aflevering staat helemaal in het teken van SVG, door deze aflevering zijn wij er weer helemaal in gedoken. Persoonlijk dacht ik zelf nooit dat het zin zou hebben icon fonts te vervangen voor SVG icons, maar daar ben ik nu van terug gekomen.</p>
+
+<!--more-->
+
+<p>&lt;img src=”http://www.s210.nl/wp-content/uploads/2014/08/peekeye.png” <span style="font-size: 40px;">vs</span><img src="http://www.s210.nl/wp-content/uploads/2014/08/peekeye.svg" /></p>
+
+<p>Ik wil hieronder een kleine sprong in de wereld van SVG maken (Scalable Vector Graphics) en laten zien wat er mogelijk is. Het eerste wat ik wil aan aankaarten is het voorbeeld hierboven. Niet alleen is de file veel kleiner, het hele element is stijlbaar met CSS.</p>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="pfoil" data-default-tab="result" data-user="mvaneijgen" class="codepen">See the Pen <a href="http://codepen.io/mvaneijgen/pen/pfoil/">Test icon for blogpost on S210.nl</a> by Mitchel van Eijgen (<a href="http://codepen.io/mvaneijgen">@mvaneijgen</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Zie hier precies dezelfde SVG element als net, alleen wat kleuren veranderd. Ook blijft het altijd haarscherp in tegenstelling tot het PNG formaat schaalt het SVG element mee. Met de kennis dat SVG elementen te stijlen zijn met CSS kun je het ook één stap verder gaan met de CSS animaties.</p>
+
+<p data-height="268" data-theme-id="0" data-slug-hash="GaIyC" data-default-tab="result" data-user="mvaneijgen" class="codepen">See the Pen <a href="http://codepen.io/mvaneijgen/pen/GaIyC/">SVG animation pure CSS </a> by Mitchel van Eijgen (<a href="http://codepen.io/mvaneijgen">@mvaneijgen</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Omdat dit geen technische blog is zal ik niet te diep op alle aspecten van SVG, maar als je geïnteresseerd bent zou ik voorstellen wat rond te spelen met de hierboven gegeven voorbeelden of als je vragen hebt mail mij op mvaneijgen@gmail.com.</p>
+
+<p>Nog een kleine recap SVG files zijn meestal kleiner, blijven schaalbaar en bewerkbaar met CSS en zijn heel makkelijk te animeren en responsive te maken.</p>
+
+      </div>
+    </section>
+    <div class="author-side flex">
+	
+	
+	<div class="inner flex">
+		<div class="info col">
+			<h2>@mvaneijgen</h2>
+			<p><img src="/img/team/mitchel-van-eijgen.jpg" class="clip"> I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.</p>
+		</div>
+		
+		<div class="contact col">
+			<h3>Mitchel van Eijgen</h3>
+			<p>Grafisch ontwerper met een liefde voor techniek</p>
+			<br>
+			<div class="links flex">
+				<div class="contact-info">
+					<p>mvaneijgen.nl</p>
+					<p>mvaneijgen@gmail.com</p>
+				</div>
+				<div class="social">
+					
+
+<div class="social">
+  
+  
+  
+</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+  </article>
+</section>
+<section class="flex">
+  <div class="text-container center min-vh">
+    <h3>Comments</h3>
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES * * */
+var disqus_shortname = 'studioalloy';
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES * * */
+var disqus_shortname = 'studioalloy';
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.type = 'text/javascript';
+  s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+  </div>
+</section>
+
+      <footer class="flex">
+	<div class="inner flex start">
+		<!-- <div class="col">
+		<h4>Werk ruimte</h4>
+		<p>Ben jij een creatieve ondernemer en op zoek naar een mooie werkruimte in Haarlem? Wij ontmoeten je graag en misschien pas je perfect bij het team!</p>
+	</div> -->
+	<div class="col">
+		<h4>Het team</h4>
+		<ul>
+			
+			
+			<li><a href="/team/mitchel-van-eijgen/">Mitchel van Eijgen</a></li>
+			
+			<li><a href="/team/david-hager/">David Hager</a></li>
+			
+			<li><a href="/team/ruben-daas/">Ruben Daas</a></li>
+			
+			<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
+			
+			<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
+			
+			<li><a href="/team/wilsun-cheung/">Wilsun Cheung</a></li>
+			
+			<li><a href="/team/wouter-hager/">Wouter Hager</a></li>
+			
+		</ul>
+	</div>
+	<div class="col">
+		<h4>Contact</h4>
+		<ul>
+			<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
+			<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
+			<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
+		</ul>
+	</div>
+	<div class="col">
+		<img src="/img/alloy-logo-bw.svg">
+	</div>
+</div>
+<div class="copy-bar flex">
+	<div class="inner">
+		<ul>
+			<li>
+				<p>&copy; 2015 Alloy</p>
+			</li>
+			<li>
+				<a href="/copyright">Design & development Alloy</a>
+			</li>
+			<li>
+				<a class="btn btn-download" href="download/acme-doc-2.0.1.txt">
+					<a href="/assets/legal/alloy-algemene-voorwaarden.pdf" download="Alloy Algemene voorwaarden" target="_blank">Algemene voorwaarden</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+  </div>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+
+</html>

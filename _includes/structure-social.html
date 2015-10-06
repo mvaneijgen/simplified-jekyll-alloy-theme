@@ -1,0 +1,23 @@
+<div class="social">
+  {% if item.linkedin_username %}
+  <a href="http://linkedin.com/in/{{item.linkedin_username}}/">
+    <svg viewBox="0 0 100 100" class="linkedin">
+      <use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-linkedin"></use>
+    </svg>
+  </a>
+  {% endif %}
+  {% if item.twitter_username %}
+  <a href="http://twitter.com/{{item.twitter_username}}">
+    <svg viewBox="0 0 100 100" class="twitter">
+      <use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-twitter"></use>
+    </svg>
+  </a>
+  {% endif %}
+  {% if item.github_username %}
+  <a href="http://github.com/{{item.github_username}}">
+    <svg viewBox="0 0 100 100" class="github">
+      <use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-github"></use>
+    </svg>
+  </a>
+  {% endif %}
+</div>

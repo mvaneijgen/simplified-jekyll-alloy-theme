@@ -1,0 +1,11 @@
+<a class="post {{post.categories}}" href="{{ post.url }}">
+  <div class="featured-image cover" style="background: url({{ post.image }})">
+    <div class="hover">
+      <author><span>Door: </span>{{post.author}}</author>
+    </div>
+  </div>
+  <div class="meta">
+    <img class="author" src="{{site.baseurl}}/img/team/{{post.author | slugify }}.jpg">
+    <h4><span>{{post.categories}}: </span>{{ post.title }}</h4>
+  </div>
+</a>

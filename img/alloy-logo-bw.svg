@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>alloy-logo-bw</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="alloy-logo-bw" sketch:type="MSLayerGroup">
+            <g id="Group" sketch:type="MSShapeGroup">
+                <path d="M20.719,119.007 L0.363,69.863 L20.719,20.719 L69.863,0.363 L119.007,20.719 L139.363,69.863 L119.007,119.007 L69.863,139.363 L20.719,119.007 Z" id="Shape" fill="#AAAAAA"></path>
+                <path d="M20.719,119.008 L0.363,69.864 L20.719,20.72 L62.281,3.504 L91.718,43.376 L139.363,69.864 L119.007,119.008 L69.863,139.364 L20.719,119.008 Z" id="Shape" fill="#BBBBBB"></path>
+                <path d="M20.719,119.007 L0.363,69.863 L20.719,20.719 L59.255,28.12 L85.178,57.311 L117.081,81.359 L119.007,119.007 L69.863,139.363 L20.719,119.007 Z" id="Shape" fill="#CCCCCC"></path>
+                <path d="M20.719,119.007 L0.363,69.863 L17.141,29.357 C17.141,29.357 30.263,43.685 38.778,52.201 C47.293,60.717 76.783,70.876 76.783,70.876 C76.783,70.876 93.071,93.072 96.599,96.6 C100.127,100.128 113.22,121.405 113.22,121.405 L69.863,139.364 L20.719,119.007 L20.719,119.007 Z" id="Shape" fill="#DDDDDD"></path>
+                <path d="M0.363,69.863 L8.288,50.729 C8.288,50.729 18.142,50.725 29.027,61.61 C39.912,72.495 37.647,78.057 47.239,87.649 C56.831,97.241 65.305,102.111 72.964,109.771 C80.623,117.431 91.717,130.31 91.717,130.31 L69.862,139.363 L20.719,119.007 L0.363,69.863 Z" id="Shape" fill="#EEEEEE"></path>
+                <path d="M0.363,69.863 C0.363,69.863 7.357,74.837 14.534,82.015 C21.711,89.192 27.602,86.237 37.14,95.775 C46.678,105.313 43.508,106.402 55.978,118.873 C68.448,131.344 76.305,136.695 76.305,136.695 L69.862,139.364 L20.719,119.007 L0.363,69.863 Z" id="Shape" fill="#FFFFFF"></path>
+                <path d="M0.363,69.863 L20.719,119.007 L69.863,139.363 L26.972,112.374 L0.363,69.863 L0.363,69.863 Z" id="Shape" fill="#EE6644"></path>
+            </g>
+        </g>
+    </g>
+</svg>

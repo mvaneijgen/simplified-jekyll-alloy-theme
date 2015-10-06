@@ -1,0 +1,84 @@
+/*******************************
+Global Resets
+*******************************/
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 18px;
+	line-height: 30px;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: $regular;
+	margin: 0;
+	color: $darkgray;
+	background-color: $lightgray;
+}
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	color: $sub2-color;
+}
+h1, h2, h3 {
+	font-weight: $regular;
+}
+h4{
+	font-weight: $bold;
+}
+h1 {
+	font-size: 3.5rem;
+	line-height: 4rem;
+	text-transform: uppercase;
+	letter-spacing:0.02rem;
+	margin-bottom: 30px;
+}
+h2{
+	font-size: 2.5rem;
+	line-height: 3rem;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 1.6rem;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+h4 {
+	font-size: 1.2rem;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+h5 {
+	font-weight: 400;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	line-height: 1.9rem;
+}
+.text-container h4 {
+	margin-bottom: 0;
+}
+a {
+	color: $darkgray;
+	text-decoration: none;
+}
+.meta h3 {
+	margin-bottom: 20px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+p {
+	margin: 0;
+}
+button {
+	border: 0;
+	padding: 30px 60px;
+	color: #fff;
+	font-size: 1.6em;
+	text-transform:uppercase;
+	letter-spacing:0.15rem;
+	background-color: $base-color;
+}

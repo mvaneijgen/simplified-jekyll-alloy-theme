@@ -1,0 +1,30 @@
+---
+layout: default
+title: Contact
+description:
+permalink: contact/
+---
+<section class="flex">
+  <div class="title-container sub center">
+    <h2 class="center">Contact</h2>
+  </div>
+</section>
+<section class="contact-info flex">
+  <div class="text-container">
+    <div class="inner flex">
+      <div class="col">
+        <address>
+          {{ site.address }}
+        </address>
+        <p>{{ site.email }}</p>
+        <p>{{ site.phone }}</p>
+        {% include loop-social.html %}
+      </div>
+      <div class="col">
+        {% include contact-from.html %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include maps.html %}

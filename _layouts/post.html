@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section>
+  <article>
+    <section class="blog-header cover" style="background: url({{site.baseurl}}{{ page.image }});"></section>
+    <section class="flex">
+      <div class="text-container min-vh">
+        <h1>{{page.title}}</h1>
+        {{ content }}
+      </div>
+    </section>
+    {% include author.html %}
+  </article>
+</section>
+<section class="flex">
+  <div class="text-container center min-vh">
+    <h3>Comments</h3>
+    {% include disqus.html %}
+  </div>
+</section>

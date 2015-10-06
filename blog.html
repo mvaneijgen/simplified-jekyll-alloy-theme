@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+description:
+categories: post-page
+permalink: blog/
+---
+
+<section class="blog-page no-vh">
+	<div class="content">
+		{% for post in site.posts date %}
+		{% include post-loop.html %}
+		{% endfor %}
+	</div>
+</section>

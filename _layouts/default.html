@@ -1,0 +1,17 @@
+{% include head.html %}
+</head>
+<body class="{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="main">
+    {% include menu.html %}
+    <div class="wrapper">
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </div>
+  {% include embed-google-analytics.html %}
+</body>
+
+</html>

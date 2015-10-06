@@ -1,0 +1,132 @@
+---
+layout: default
+title: Home
+description:
+categories: index
+---
+<section class="home vh flex end">
+  <div class="svg-animation">
+    {% include svg-animation-bg.html %}
+  </div>
+  <div class="text-container">
+    <h1><a href="/contact">Studio Alloy</a> wordt gevormd door een groep <a href="/team">creatieve ondernemers</a> die zich dagelijks bezighoudt met het maken van <a href="/case">verhalen voor op het beeldscherm</a>. Wij maken impact met pixels. Of het een <a href="#">website</a>, <a href="#">game</a>, <a href="#">mobiele app</a>, <a href="#">video</a> of <a href="#">animatie</a> is, of dit alles gecombineerd. Onze kracht is het realiseren van digitale producties van concept tot en met uitvoering.</h1>
+    <img class="logo" src="/img/{{ site.title | downcase }}-logo.svg">
+  </div>
+</section>
+
+<section class="about flex start">
+  <div class="text-container">
+    <p>{{ site.description }}</p>
+  </div>
+</section>
+
+<section class="cases flex">
+  <div class="item-container flex wrap">
+    {% assign featured_case = (site.case | where:"featured","true") %}
+    {% for case in featured_case limit:4 %}
+    {% include loop-case.html %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="flex">
+  <div class="center" style="padding: 5% 10% 10%;">
+    <a href="/case"><button>Bekijk hier alle cases.</button></a>
+  </div>
+</section>
+
+<section class="flex">
+  <div class="title-container sub center">
+    <h2 class="center">Alloy diensten</h2>
+  </div>
+</section>
+<section class="flex">
+  <div class="text-container">
+    <p>Bij Alloy streven wij ernaar om het meeste uit jouw product of dienst te halen door het inzetten van het juiste medium. Wij verdiepen ons grondig in jouw situatie om vervolgens met een frisse blik oplossingen aan te dragen voor uitdagingen en we helpen je met het maken van de vertaalslag naar perfecte, visuele communicatie.</p>
+  </div>
+</section>
+
+<section class="services flex">
+  <div class="inner flex">
+    <div class="col">
+      <h3>Web &amp; Interactief Design</h3>
+      <p>Alloy heeft een sterke affiniteit met zowel technische ontwikkelingen voor web, als voor visueel aantrekkelijk en communicatief sterk ontwerp. Het geheim van een succesvolle website is, naast de gebruiksvriendelijkheid en technische vereisten voor optimale vindbaarheid (SEO / SEA), een aansprekend design. Wie wil je aanspreken? En wat is jouw boodschap? Wij stellen de juiste vragen om een beeld te vormen over wat aansprekend design moet zijn specifiek voor jouw publiek en dat jouw publiek je online weet te vinden.</p>
+    </div>
+    <div class="col mobile-first">
+      <img src="/img/alloy-dienst-illustratie-design.svg" alt="" class="overflow-right"/>
+    </div>
+  </div>
+</section>
+
+<section class="services flex">
+  <div class="inner flex">
+    <div class="col">
+      <img src="/img/alloy-dienst-illustratie-development.svg" alt="" class="overflow-left">
+    </div>
+    <div class="col">
+      <h3>Development</h3>
+      <p>Door de flexibele schil van Alloy developers adviseren wij welke techniek het beste werkt voor jouw project. Wij kiezen uitsluitend voor open en bewezen technieken, die innovatief zijn en ondersteund worden door een brede developers community. Of het project nu een complexe systeemarchitectuur behoeft of eerder een bekende omgeving wenselijk is, zoals Wordpress; wij adviseren welke oplossing het beste is voor jouw situatie. Dit leveren wij inclusief service en volle verantwoordelijkheid of indien gewenst netjes overgedragen aan jouw eigen technische specialisten.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services flex">
+  <div class="inner flex">
+    <div class="col">
+      <h3>Film &amp; Animatie</h3>
+      <p>Motion design, oftewel aantrekkelijke animatievideo’s zijn een trend op het moderne web. Aan de hand van uitlegvideo’s met geanimeerde beelden ben je beter in staat om een complexe boodschap in een korte tijd over te brengen aan je publiek. Door de nieuwste online technieken is animatie ook erg goed in te zetten binnen de interactie van je website. Denk aan interactieve infographics of een timeline met een verhaal waar je als bezoeker zelf van begin tot eind doorheen kan scrollen. Wij vertellen jouw verhaal met goed gevulde pixels.</p>
+    </div>
+    <div class="col mobile-first">
+      <img src="/img/alloy-dienst-illustratie-animatie.svg" alt="" class="overflow-right"/>
+    </div>
+  </div>
+</section>
+
+<section class="clients half-vh fixed flex end" style="background: url(/img/clients.jpg);">
+  
+  <div class="title-container end-min-vh">
+    <h4 class="center no-margin sub-color">Past jouw organisatie hier ook tussen?</h4>
+  </div>
+</section>
+<section class="team flex custom-padding">
+  <div class="title-container sub">
+    <h2 class="center">Ontmoet het team</h2>
+  </div>
+</section>
+<section class="team flex">
+  <div class="text-container">
+    <div class="flex wrap overflow">
+      
+      <div id="owl-example" class="owl-carousel">
+        {% assign team_order = (site.team | sort: 'order') %}
+        {% for post in team_order %}
+        {% include loop-team.html %}
+        {% endfor %}
+      </div>
+      
+    </div>
+    <p>{{ site.workspacedec }}</p>
+  </div>
+</section>
+{% include maps.html %}
+<section class="contact-info flex">
+  <div class="title-container sub min-vh">
+    <h2 class="center">Contact</h2>
+  </div>
+</section>
+<section class="contact-info flex">
+  <div class="text-container">
+    <div class="inner flex">
+      <div class="col">
+        <address>
+          {{ site.address }}
+        </address>
+        <p>{{ site.email }}</p>
+        <p>{{ site.phone }}</p>
+      </div>
+      <div class="col">
+        {% include contact-from.html %}
+      </div>
+    </div>
+  </div>
+</section>

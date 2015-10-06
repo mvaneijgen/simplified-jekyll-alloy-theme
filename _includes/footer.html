@@ -1,0 +1,71 @@
+<footer class="flex">
+	<div class="inner flex start">
+		<!-- <div class="col">
+		<h4>Werk ruimte</h4>
+		<p>{{ site.workspacedec }}</p>
+	</div> -->
+	<div class="col">
+		<h4>Het team</h4>
+		<ul>
+			{% assign team_order = (site.team | sort: 'order') %}
+			{% for post in team_order %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="col">
+		<h4>Contact</h4>
+		<ul>
+			<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+			<li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+			<li><address>{{ site.address }}</address></li>
+		</ul>
+	</div>
+	<div class="col">
+		<img src="/img/alloy-logo-bw.svg">
+	</div>
+</div>
+<div class="copy-bar flex">
+	<div class="inner">
+		<ul>
+			<li>
+				<p>&copy; 2015 Alloy</p>
+			</li>
+			<li>
+				<a href="/copyright">Design & development Alloy</a>
+			</li>
+			<li>
+				<a class="btn btn-download" href="download/acme-doc-2.0.1.txt">
+					<a href="/assets/legal/alloy-algemene-voorwaarden.pdf" download="Alloy Algemene voorwaarden" target="_blank">Algemene voorwaarden</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+{% if page.title == "Home" %}
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		loop:true,
+		margin:60,
+		nav:false,
+		center:true,
+		startPosition: 1,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			1024:{
+				items:4
+			},
+		}
+	});
+});
+</script>
+{% endif %}

@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<section class="flex">
+  <author class="center">
+    <img src="/img/team/{{ page.title | slugify }}.jpg" alt="" class="clip" />
+  </author>
+</section>
+<section class="flex">
+  <div class="title-container sub center">
+    <h1>{{page.title}}</h1>
+    <h3 class="transform">{{ page.excerpt }}</h3>
+    {% if page.twitter_username: %}
+    <h4>@{{ page.twitter_username: }}</h4>
+    {% endif %}
+  </div>
+</section>
+<section class="flex">
+  <div class="text-container">
+    {{ content }}
+    <div class="info-container">
+      <p>{{ page.email }}</p>
+      <p>{{ page.phone }}</p>
+      {% include loop-social.html %}
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- {% assign posts = (site.posts | where:"author", page.title) %}
+{% if posts.size > 0 %}
+<section class="flex">
+<div class="text-container center">
+<h2>Lees hier de posts door {{ page.title }}</h2>
+</div>
+</section>
+
+<section class="flex">
+<div class="item-container flex wrap">
+{% for post in posts %}
+{% include post-loop.html %}
+{% endfor %}
+</div>
+</section>
+{% else %}
+<section class="flex custom-padding">
+<div class="center">
+<h4 class="transform" style="color:#bbb;">{{ page.title }}'s post zitten nog in de oven.</h4>
+<img src="/img/no-messages.png" class="custom-padding">
+</div>
+</section>
+{% endif %} -->

@@ -1,0 +1,177 @@
+
+<style>
+@media only screen and (min-width : 1440px) {
+  /* Styles */
+  body {
+    margin: 0;
+  }
+  .animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  @-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+    }
+    
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, -3000px, 0);
+      transform: translate3d(3000px, -3000px, 0);
+    }
+    
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-15px, 15px, 0);
+      transform: translate3d(-15px, 15px, 0);
+    }
+    
+    75% {
+      -webkit-transform: translate3d(8px, -8px, 0);
+      transform: translate3d(8px, -8px, 0);
+    }
+    
+    90% {
+      -webkit-transform: translate3d(-2px, 2px, 0);
+      transform: translate3d(-2px, 2px, 0);
+    }
+    
+    100% {
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+    }
+    
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, -3000px, 0);
+      transform: translate3d(3000px, -3000px, 0);
+    }
+    
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-15px, 15px, 0);
+      transform: translate3d(-15px, 15px, 0);
+    }
+    
+    75% {
+      -webkit-transform: translate3d(8px, -8px, 0);
+      transform: translate3d(8px, -8px, 0);
+    }
+    
+    90% {
+      -webkit-transform: translate3d(-2px, 2px, 0);
+      transform: translate3d(-2px, 2px, 0);
+    }
+    
+    100% {
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+  }
+  svg .animated:nth-child(1) {
+    -webkit-animation-delay:0.3s;
+    animation-delay:0.3s;
+  }
+  svg .animated:nth-child(2) {
+    -webkit-animation-delay:0.9s;
+    animation-delay:0.9s;
+  }
+  svg .animated:nth-child(3) {
+    -webkit-animation-delay:1.4s;
+    animation-delay:1.4s;
+  }
+  svg .animated:nth-child(4) {
+    -webkit-animation-delay:2s;
+    animation-delay:2s;
+  }
+  svg .animated:nth-child(5) {
+    -webkit-animation-delay:2.6s;
+    animation-delay:2.6s;
+  }
+  svg .animated:nth-child(6) {
+    -webkit-animation-delay:3.2s;
+    animation-delay:3.2s;
+  }
+  svg .animated:nth-child(7) {
+    animation-delay:3.6s;
+    -webkit-animation-delay:3.6s;
+  }
+}
+</style>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="alloy-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="710 0 1280 800" preserveAspectRatio="none">
+<g class="background">
+  <defs>
+    <rect id="mask" x="710" width="1280" height="800"/>
+  </defs>
+  <clipPath id="mask_1_">
+    <use xlink:href="#mask"  overflow="visible"/>
+  </clipPath>
+  <g class="rotate" clip-path="url(#mask_1_)">
+    <g class="layers">
+      <rect class="animated fadeIn layer" x="549.925" y="-399.82" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 2020.9464 1636.8861)" fill="#EE6644" width="1599.116" height="1599.423"/>
+      <polygon class="animated bounceInDown layer" fill="#99FFFF" points="1349.592,-730.963 421.302,197.327 685.065,461.089 901.631,844.442
+      1288.286,1064.31 1552.048,1328.072 2480.338,399.783 			"/>
+      <path class="animated bounceInDown layer" fill="#85DADA" d="M1350.217-730.338L402.765,217.115l283.392,243.642l-0.466,0.957
+      c0,0,2.914,1.935,7.878,5.416c18.603,13.041,67.774,49.056,116.946,98.228c62.293,62.293,121.422,28.647,204.208,111.433
+      c81.706,81.706,52.309,95.796,155.593,200.222c1.361,1.376,2.646,2.706,4.052,4.111
+      c95.937,95.952,162.076,141.474,175.884,150.595l268.531,230.872l862.183-862.183L1350.217-730.338z"/>
+      <path class="animated bounceInDown layer" fill="#70B4B4" d="M1349.592-730.963L558.218,60.412L757.988,250.23c0,0,140.898,37.519,226.593,123.214
+      c94.477,94.477,67.743,149.824,150.995,233.076c83.252,83.252,160.06,122.268,226.539,188.747
+      c59.181,59.195,140.664,155.496,157.837,175.933c2.113,2.514,3.314,3.952,3.314,3.952l0.564-0.282l195.895,185.513
+      l760.605-760.605L1349.592-730.963z"/>
+      <path class="animated bounceInDown layer" fill="#5C8F8F" d="M1349.592-730.963L717.626-98.996L882.539,57.611l-0.051,0.112
+      c0.006,0.006,112.799,125.451,186.71,199.362c16.546,16.546,43.123,32.918,74.358,48.387
+      c108.291,53.635,272.981,96.226,272.981,96.226s136.023,197.992,166.648,228.617c30.41,30.41,135.347,219.965,136.794,222.568
+      c0.012,0.012,0.062,0.122,0.062,0.122l0.042-0.017l157.498,149.563l602.762-602.762L1349.592-730.963z"/>
+      <polygon class="animated bounceInDown layer" fill="#476969" points="1349.592,-730.963 785.757,-167.128 1287.212,7.783 1509.255,264.104
+      1793.254,465.725 1916.503,963.618 2480.338,399.783 			"/>
+      <polygon class="animated bounceInDown layer" fill="#334444" points="2480.746,399.375 1350,-731.371 1069.221,-450.592 1375.354,-194.844
+      1374.776,-194.561 1620.836,160.931 2053.497,371.703 2053.481,371.658 2301.374,578.747 			"/>
+    </g>
+  </g>
+</g>
+</svg>

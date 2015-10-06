@@ -1,0 +1,25 @@
+---
+layout: default
+title:
+description:
+categories: team-page
+permalink: team/
+---
+<section class="team flex">
+  <div class="text-container">
+    <h2 class="center">Meet the team.</h2>
+    <div class="flex wrap overflow">
+      {% assign team_order = (site.team | sort: 'order') %}
+      {% for post in team_order %}
+      {% include loop-team.html %}
+      {% endfor %}
+      <a class="team-member center">
+        <img src="/img/team/you.jpg" class="clip">
+        <div class="meta">
+          <h5>Ben jij opzoek naar een creatieve werkplek?</h5>
+        </div>
+      </a>
+    </div>
+    <p>{{ site.workspacedec }}</p>
+  </div>
+</section>

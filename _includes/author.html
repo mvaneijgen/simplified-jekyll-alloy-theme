@@ -1,0 +1,26 @@
+<div class="author-side flex">
+	{% assign author = (site.team|where:"title", page.author) %}
+	{% for post in author %}
+	<div class="inner flex">
+		<div class="info col">
+			<h2>@{{ post.twitter_username }}</h2>
+			<p><img src="{{site.baseurl}}/img/team/{{post.title | slugify }}.jpg" class="clip"> {{ post.description }}</p>
+		</div>
+		
+		<div class="contact col">
+			<h3>{{ post.title }}</h3>
+			<p>{{ post.excerpt }}</p>
+			<br>
+			<div class="links flex">
+				<div class="contact-info">
+					<p>{{ post.website }}</p>
+					<p>{{ post.email }}</p>
+				</div>
+				<div class="social">
+					{% include loop-social.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
